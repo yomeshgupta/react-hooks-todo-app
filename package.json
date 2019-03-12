@@ -4,9 +4,9 @@
 	"description": "This is an intro to React hooks by building a simple todo app",
 	"main": "index.js",
 	"scripts": {
-		"webpack-dev-server": "webpack-dev-server",
+		"webpack-dev-server": "webpack-dev-server --config webpack.dev.js --hot",
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"dev": "npm run webpack-dev-server --hot",
+		"dev": "npm run webpack-dev-server",
 		"build": "webpack --config webpack.prod.js"
 	},
 	"author": "Yomesh Gupta <yomesh.gupta@gmail.com> (http://www.yomeshgupta.com/)",
