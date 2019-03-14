@@ -1,0 +1,82 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Roboto';
+	box-sizing: border-box;
+	transition: -webkit-filter 0.5s ease;
+	-webkit-transition: -webkit-filter 0.5s ease;
+}
+
+body,
+html {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #ecf0f1;
+}
+
+.wrapper {
+	width: 80%;
+	max-width: 600px;
+	max-height: 100%;
+	padding: 20px 0px;
+	margin: 0 auto;
+}
+form {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+form input {
+	padding: 10px 15px;
+}
+form input[type='text'] {
+	width: 69%;
+}
+form input[type='submit'] {
+	width: 29%;
+	cursor: pointer;
+	border: 0px;
+	background: #34495e;
+	color: #fff;
+	transition: all 0.5s linear;
+}
+form input[type='submit']:hover {
+	background: #2d98da;
+}
+#loader,
+#empty,
+#todos {
+	margin-top: 5px;
+}
+#loader,
+#empty,
+#todos li {
+	list-style: none;
+	background: hsla(0, 0%, 100%, 0.6);
+	padding: 15px;
+	margin-bottom: 4px;
+	display: flex;
+	flex-direction: row;
+}
+#todos li p {
+	flex: 1;
+}
+#todos li .controls {
+	width: 20%;
+	flex-shrink: 0;
+	align-self: flex-end;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+#todos li .controls .control-icon {
+	color: inherit;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.complete {
+	color: #7f8c8d9a !important;
+	text-decoration: line-through;
+	transition: all 0.5s linear;
+}
