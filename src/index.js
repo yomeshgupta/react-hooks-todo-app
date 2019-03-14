@@ -167,7 +167,7 @@ function Todos() {
 	}
 
 	return (
-		<div className="wrapper">
+		<div className="wrapper custom-scrollbar">
 			<form method="#" onSubmit={saveHandler}>
 				<input
 					type="text"
