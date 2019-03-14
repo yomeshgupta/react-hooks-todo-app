@@ -93,6 +93,7 @@ function Todos() {
 
 	function saveHandler(e) {
 		e.preventDefault();
+		if (!task || !task.trim().length) return alert('Enter task');
 		dispatch({
 			type: 'ADD_TODO',
 			payload: {
